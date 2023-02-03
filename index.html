@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAME</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="win-container inactive">
+      <h1>You did it! You're the best! Congratulations on an amazing win, you've definitely earned it!</h1>
+      <span class="trophy">🏆</span>
+      <p class="win-container--para">Your time: <span id="winTime"></span></p>
+      <a href="./index.html">play again</a>
+  </div>
+
+  <div class="game-container">
+    <div class="messages">
+      <p>Lives: <span id="livesElement"></span></p>
+      <p>Level: <span id="currentLevel"></span></p>
+      <p>Time: <span id="time"></span></p>
+    </div>
+    <div>
+      <canvas id="game"></canvas>
+    </div>
+    <div class="btns">
+      <button id="up">Up</button>
+      <button id="left">Left</button>
+      <button id="right">Right</button>
+      <button id="down">Down</button>
+    </div>
+    <p class="recor-text">Record: <span id="record"></span></p>
+  </div>
+  <script src="./maps.js"></script>
+  <script src="./game.js"></script>
+</body>
+</html>

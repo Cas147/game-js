@@ -1,0 +1,102 @@
+body {
+    background-color: indigo;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+canvas {
+    margin: 40px 0;
+    border: 4px solid #ff6600;
+    border-radius: 8px;
+    background-color: #feff9d;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+}
+
+button, a {
+    background-color: #fdef05;
+    border-radius: 8px;
+    border-color: #ff6600;
+    font-family: inherit;
+    margin: 0;
+    padding: 5px 20px;
+    width: auto;
+}
+
+button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.trophy {
+    font-size: 4rem;
+    margin: 50px 0;
+}
+
+.messages {
+    display: flex;
+    justify-content: between;
+    margin: 0 auto;
+}
+
+.messages p {
+    width: auto;
+    margin-left: 50px;
+}
+p {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 40px;
+}
+
+.win-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.win-container--para {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.recor-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 440px) {
+    button {
+        margin-top: 25px;
+    }
+
+    #up,
+    #down {
+        margin-left: 100%;
+        margin-right: 100%;
+    }
+}
